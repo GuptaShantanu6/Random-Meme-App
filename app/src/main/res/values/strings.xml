@@ -2,4 +2,9 @@
     <string name="app_name">MemeShare</string>
     <string name="share">Share</string>
     <string name="next">Next</string>
+    <string name="new_meme">New Meme</string>
+    <string name="saved_memes">Saved Memes</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 </resources>
