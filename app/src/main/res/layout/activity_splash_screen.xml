@@ -11,7 +11,7 @@
         android:layout_height="200dp"
         android:src="@drawable/ic_baseline_image_24"
         android:layout_centerInParent="true"
-        android:id="@+id/introImage"/>
+        android:id="@+id/introImage" />
 
 
 </RelativeLayout>
