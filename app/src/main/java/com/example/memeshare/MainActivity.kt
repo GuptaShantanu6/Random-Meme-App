@@ -9,6 +9,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
@@ -45,10 +46,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.savedMeme -> loadmeme()
             }
             true
+
         }
     }
 
     private fun loadmeme(){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START))drawerLayout.closeDrawer(GravityCompat.START)
         progressBar.visibility = View.VISIBLE
         val url = "https://meme-api.herokuapp.com/gimme"
 
@@ -104,8 +107,9 @@ class MainActivity : AppCompatActivity() {
         if (toggle.onOptionsItemSelected(item)) {
             return true
         }
-        
         return super.onOptionsItemSelected(item)
     }
+
+    
 
 }
