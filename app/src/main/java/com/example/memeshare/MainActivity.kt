@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                 }).into(memeImageView)
             },
             {
-                Toast.makeText(this, "something went wrong", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Please Check Your Internet Connection", Toast.LENGTH_LONG).show()
             })
 
     // Add the request to the RequestQueue.
