@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.memeshare"
-        minSdkVersion 16
+        minSdkVersion 29
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
