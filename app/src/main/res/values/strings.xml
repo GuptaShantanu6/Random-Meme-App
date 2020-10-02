@@ -6,5 +6,7 @@
     <string name="saved_memes">Saved Memes</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="line_2">Line 2</string>
+    <string name="line_1">Line 1</string>
 
 </resources>

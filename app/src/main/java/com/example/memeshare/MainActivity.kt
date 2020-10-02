@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.newMeme -> loadmeme()
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadmeme(){
+    fun loadmeme(){
         if (drawerLayout.isDrawerOpen(GravityCompat.START))drawerLayout.closeDrawer(GravityCompat.START)
         progressBar.visibility = View.VISIBLE
         val url = "https://meme-api.herokuapp.com/gimme"
